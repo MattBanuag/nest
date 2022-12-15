@@ -6,7 +6,7 @@
         <meta name="author" content="Matthew Banuag">
         <meta name="description" content="My website portfolio">
         <meta name="keywords" content="Matthew Banuag, Website Portfolio, Personal Site">
-        <title>Quick Eats</title>
+        <title>Nest | Login</title>
         <!-- GOOGLE FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +24,14 @@
         <script src="assets/scripts/index.js" defer></script>
     </head>
     <body>
-        <main class="wrapper">
-            
-            <div class="login-box-flex-column">
+        <main class="login-wrapper wrapper">
+            <figure class="logo">
+                <img src="assets/media/logo.png" alt="Nest Logo" width="100" height="100">
+            </figure>
+
+            <div class="login-box flex-column">
                 <article>
-                    <h2>Welcome to Nest</h2>
+                    <h2>Welcome to <span class="blue">Nest</span></h2>
                     <p>
                         A platform dedicated to finding your network, to 
                         boost your professional career.
@@ -36,8 +39,13 @@
                 </article>
 
                 <form class="login-form flex">
-                    <input type="text" placeholder="Username" class="username-input">
-                    <input type="password" placeholder="Password" class="password-input">
+                    <div>
+                        <i class="fa-solid fa-at"></i><input type="text" placeholder="Username" class="username-input">
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-key"></i><input type="password" placeholder="Password" class="password-input">
+                    </div>
                 </form>
 
                 <div class="links-box flex">
@@ -50,7 +58,7 @@
                     <button>Create Profile</button>
                 </div>
 
-                <article class="social-links flex">
+                <article class="social-links">
                     <p>Or login with</p>
                     <a href="#">Facebook</a>
                     <a href="#">LinkedIn</a>
