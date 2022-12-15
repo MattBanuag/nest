@@ -1,5 +1,13 @@
 'use strict';
-import { onEvent, select, create } from "./utils.js";
+// UTILITY FUNCTIONS
+// Add Event Listener Function
+function onEvent(event, selector, callback) {
+    return selector.addEventListener(event, callback);
+}
+// Query Selector Function
+function select(selector, parent = document) {
+    return parent.querySelector(selector);
+}
 
 // HTML DOCUMENT BRIDGE
 const loginBtn = select('.login-btn');
@@ -40,21 +48,25 @@ onEvent('click', loginBtn, () => {
         dialogProfileFailed.showModal();
         setTimeout(() => {
             dialogProfileFailed.close();
-        }, 2000);
+        }, 1500);
         return;
     }
 
-    if(username == localStorage.getItem('username') || 
-       password == localStorage.getItem('password')) {
+    if(username !== localStorage.getItem('username') || 
+       password !== localStorage.getItem('password')) {
         dialogLoginFailed.showModal();
         setTimeout(() => {
             dialogLoginFailed.close();
             console.log(username);
             console.log(password);
-        }, 2000);
+        }, 1500);
+        return;
     } 
 
     window.location.href = './home.html';
 });
+
+
+
 
 
