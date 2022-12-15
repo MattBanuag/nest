@@ -6,3 +6,99 @@
     height: 100vh;
 }
 
+.login-wrapper {
+    background: #FFF url("../media/background.jpg") center center / cover no-repeat fixed;
+}
+
+/* = = = = = = = = = = = = = = = = = = */
+/* LOGIN                               */
+/* = = = = = = = = = = = = = = = = = = */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    top: 3%;
+    left: 1%;
+    animation: rotation 4s infinite linear;
+}
+
+.blue {
+    color: #3B82F6;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+    padding-inline: 70px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.login-form {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    background-color: rgba(0,0,0,0);
+}
+
+.login-buttons {
+    gap: 15px;
+}
+
+.login-buttons button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.login-buttons button+button {
+    background-color: #3EC70B;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #2FA4FF;
+    text-decoration: underline;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
