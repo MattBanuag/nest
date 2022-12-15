@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/*
+  BROWSER STYLES RESET
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  color: #000;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  height: 100vh;
+  background-color: #F2F4F9;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+  overflow-wrap: break-word;
+}
+
+li, a, i, figure, img, button,
+input[type=button], input[type=submit] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+input, textarea, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input[type=button], input[type=submit], input[type=clear], input[type=radio], button, a {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*-------------------------------------------*/
+/* BASIC ELEMENT STYLES                      */
+/*-------------------------------------------*/
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+button {
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: #379237;
+  color: #FFF;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.intro-img {
+  width: 400px;
+  height: 400px;
+}
