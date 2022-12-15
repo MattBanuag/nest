@@ -19,9 +19,9 @@ onEvent('click', createBtn, () => {
 
     if(!emailRegex.test(username)) return usernameInput.style.border = 'thin solid #FF4A4A';
     if(password.length < 6) return passwordInput.style.border = 'thin solid #FF4A4A';
-        
-    localStorage.setItem('username', username);
-    localStorage.setItem('password', password);
+    
+    localStorage.setItem('password', JSON.stringify(password));
+    localStorage.setItem('username', JSON.stringify(username));
 
     dialogProfileSuccess.showModal();
     setTimeout(() => {
@@ -33,6 +33,9 @@ onEvent('click', createBtn, () => {
 
 // EVENTS
 onEvent('click', loginBtn, () => {
+    let username = usernameInput.value;
+    let password = passwordInput.value;
+    
     if(localStorage.length < 1) {
         dialogProfileFailed.showModal();
         setTimeout(() => {
@@ -41,16 +44,17 @@ onEvent('click', loginBtn, () => {
         return;
     }
 
-    if(username !== localStorage.getItem(username) || 
-       password !== localStorage.getItem(password)) {
+    if(username == localStorage.getItem('username') || 
+       password == localStorage.getItem('password')) {
         dialogLoginFailed.showModal();
         setTimeout(() => {
             dialogLoginFailed.close();
+            console.log(username);
+            console.log(password);
         }, 2000);
-        return;
-    } else {
-        window.location.href = './home.html';
-    }
+    } 
+
+    window.location.href = './home.html';
 });
 
 
