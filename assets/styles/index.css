@@ -102,3 +102,15 @@
       transform: rotate(359deg);
     }
 }
+
+.failed article * {
+    font-weight: 700;
+    color: #DD5353;
+}
+
+.success article * {
+    font-weight: 700;
+    color: #54B435;
+}
+
+

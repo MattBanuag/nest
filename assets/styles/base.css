@@ -130,7 +130,20 @@ i {
   font-size: 2rem;
 }
 
-.intro-img {
-  width: 400px;
-  height: 400px;
+dialog {
+  position: fixed;
+  top: 1%;
+  left: 40%;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+dialog * {
+  text-align: center;
+  color: #000;
+}
+
+dialog article i {
+  font-size: 1.2rem;
 }

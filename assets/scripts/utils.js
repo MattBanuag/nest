@@ -15,6 +15,6 @@ function select(selector, parent = document) {
 // Create HTML Element Function
 function create(element, parent = document) {
     return parent.createElement(element);
-  }
+}
 
 export { onEvent, select, create };
