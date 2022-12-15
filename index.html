@@ -21,7 +21,7 @@
 
         <!-- CSS & JAVASCRIPT -->
         <link rel="stylesheet" href="assets/styles/index.css" media="screen">
-        <script src="assets/scripts/index.js" defer></script>
+        <script src="assets/scripts/index.js" type="module"></script>
     </head>
     <body>
         <main class="login-wrapper wrapper">
@@ -54,8 +54,8 @@
                 </div>
 
                 <div class="login-buttons flex">
-                    <button>Login</button>
-                    <button>Create Profile</button>
+                    <button class="login-btn">Login</button>
+                    <button class="create-btn">Create Profile</button>
                 </div>
 
                 <article class="social-links">
@@ -66,5 +66,23 @@
                 </article>
             </div>
         </main>
+
+        <dialog class="dialog-success success">
+            <article>
+                <p>Profile created <i class="fa-regular fa-thumbs-up"></i></p>
+            </article>
+        </dialog>
+
+        <dialog class="dialog-failed failed">
+            <article>
+                <p>Please create a Profile</p>
+            </article>
+        </dialog>
+
+        <dialog class="dialog-login-failed failed">
+            <article>
+                <p>Username/password is wrong</p>
+            </article>
+        </dialog>
     </body>
 </html>
