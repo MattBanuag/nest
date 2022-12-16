@@ -265,9 +265,18 @@ nav, nav ul {
 }
 
 .feed {
+    width: 100%;
     padding: 15px;
     border-radius: 5px;
     background-color: #FFF;
+}
+
+.feed-stream {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .feed p {
