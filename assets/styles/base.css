@@ -191,6 +191,10 @@ input[type=file] {
   font-weight: 700;
 }
 
+.user-info .gray {
+  color: #7F8487;
+}
+
 .fa-user {
   padding-bottom: 10px;
   border-radius: 3px;
