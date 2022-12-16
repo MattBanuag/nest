@@ -93,7 +93,7 @@ async function getUsers() {
                 </figure>
 
                 <article>
-                    <p class="bold">${users.results[i].name.first} ${users.results[i].name.last}</p>
+                    <small class="bold size">${users.results[i].name.first} ${users.results[i].name.last}</small>
                     <small class="bold gray">${users.results[i].location.city}, CA</small>
                 </article>
 

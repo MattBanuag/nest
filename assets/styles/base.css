@@ -196,3 +196,7 @@ input[type=file] {
   border-radius: 3px;
   border-bottom: 5px solid #F15412;
 }
+
+.size {
+  font-size: 1.1rem;
+}
