@@ -9,6 +9,17 @@ function select(selector, parent = document) {
     return parent.querySelector(selector);
 }
 
+// Set login credentials
+function setCred() {
+    let setUsername = 'johndoe@gmail.com';
+    let setPassword = 'password';
+
+    if(localStorage.length < 1) {
+        localStorage.setItem('password', setPassword);
+        localStorage.setItem('username', setUsername);
+    }
+}
+
 // HTML DOCUMENT BRIDGE
 const loginBtn = select('.login-btn');
 const createBtn = select('.create-btn');
@@ -20,6 +31,8 @@ let usernameInput = select('.username-input');
 let passwordInput = select('.password-input');
 usernameInput.value = '';
 passwordInput.value = '';
+
+setCred();
 
 onEvent('click', createBtn, () => {
     let username = usernameInput.value;
