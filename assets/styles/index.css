@@ -128,7 +128,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    padding-inline: 70px;
+    padding-inline: 130px;
     background-color: #2FA4FF;
 }
 
@@ -161,8 +161,7 @@ nav, nav ul {
 /* MAIN CONTENT */
 .content {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -170,9 +169,9 @@ nav, nav ul {
     width: 400px;
     margin: 20px 0;
     border-radius: 5px;
-    background-color: #FFF;
 }
 
+/* PROFILE */
 .profile {
     width: 200px;
     height: 200px;
@@ -183,9 +182,84 @@ nav, nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    gap: 10px;
+    padding: 20px 10px;
+    background-color: #FFF;
 }
 
 .profile-container article, p {
     text-align: center;
+    font-size: 1.1rem;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #F2F4F9;
+    border-left: none;
+    border-right: none;
+}
+
+.profile-stats p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FEED */
+.feed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.posting button {
+    position: absolute;
+    top: 30%;
+    right: 38%;
+    background-color: #FFF;
+}
+
+.feed {
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.feed p {
+    text-align: left;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.likes-comments {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* .feed-profile {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 12.5%;
+    left: 38%;
+} */
+
+/* NETWORK */
+.people-container {
+    background-color: #FFF;
 }
