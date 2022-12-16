@@ -306,6 +306,12 @@ nav, nav ul {
     border-right: none;
 }
 
+.other-users-box article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .other-users-box figure img {
     width: 80px;
     height: 80px;
