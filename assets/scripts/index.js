@@ -28,14 +28,16 @@ onEvent('click', createBtn, () => {
     if(!emailRegex.test(username)) return usernameInput.style.border = 'thin solid #FF4A4A';
     if(password.length < 6) return passwordInput.style.border = 'thin solid #FF4A4A';
     
-    localStorage.setItem('password', JSON.stringify(password));
-    localStorage.setItem('username', JSON.stringify(username));
+    localStorage.setItem('password', password);
+    localStorage.setItem('username', username);
 
     dialogProfileSuccess.showModal();
     setTimeout(() => {
         dialogProfileSuccess.close();
     }, 2000);
 
+    usernameInput.value = '';
+    passwordInput.value = '';
     console.log(localStorage);
 }); 
 
@@ -57,12 +59,12 @@ onEvent('click', loginBtn, () => {
         dialogLoginFailed.showModal();
         setTimeout(() => {
             dialogLoginFailed.close();
-            console.log(username);
-            console.log(password);
         }, 1500);
         return;
     } 
-
+    
+    usernameInput.value = '';
+    passwordInput.value = '';
     window.location.href = './home.html';
 });
 
