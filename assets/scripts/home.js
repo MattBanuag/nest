@@ -35,7 +35,7 @@ async function getUsers() {
 
                 <article>
                     <p class="bold">${users.results[i].name.first} ${users.results[i].name.last}</p>
-                    <p class="bold gray">${users.results[i].location.city}, CA</p>
+                    <small class="bold gray">${users.results[i].location.city}, CA</small>
                 </article>
 
                 <div><i class="fa-solid fa-user-plus"></i></div>
