@@ -11,6 +11,7 @@ function select(selector, parent = document) {
 
 // HTML DOCUMENT BRIDGE
 const peopleContainer = select('.people-container');
+const dialogError = select('.dialog-error');
 const feedStream = select('.feed-stream');
 const postBtn = select('.fa-paper-plane');
 const postFile = select('#image-input');
@@ -32,6 +33,14 @@ onEvent('click', postBtn, () => {
     const message = select('.message').value;
     let content = document.createElement('div');
     content.classList.add('feed');
+
+    if(message.length < 1) {
+        dialogError.showModal();
+        setTimeout(() => {
+            dialogError.close();
+        }, 1000);
+        return;
+    }
 
     try {
         let imageURL = URL.createObjectURL(postFile.files[0]);

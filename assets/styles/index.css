@@ -138,6 +138,15 @@ nav, nav ul {
     gap: 20px;
 }
 
+.dialog-error {
+    left: 43%;
+}
+
+.dialog-error article p {
+    font-weight: 700;
+    color: #DD5353;
+}
+
 .nest {
     display: flex;
     align-items: center;
