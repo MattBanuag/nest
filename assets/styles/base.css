@@ -141,7 +141,7 @@ dialog {
 
 dialog * {
   text-align: center;
-  color: #000;
+  color: #17202a ;
 }
 
 dialog article i {
@@ -162,4 +162,12 @@ span {
 
 .blue {
   color: #3B82F6;
+}
+
+.other-users-box article .gray {
+  color: #7F8487;
+}
+
+.bold {
+  font-weight: 700;
 }

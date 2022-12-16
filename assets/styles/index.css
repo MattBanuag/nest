@@ -11,7 +11,7 @@
 }
 
 .homepage-wrapper * {
-    color: #000;
+    color: #17202a ;
 }
 
 /* = = = = = = = = = = = = = = = = = = */
@@ -222,6 +222,14 @@ nav, nav ul {
     top: 30%;
     right: 38%;
     background-color: #FFF;
+}
+
+.photos-music {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 31%;
+    right: 57.5%;
 }
 
 .feed {
