@@ -317,3 +317,31 @@ nav, nav ul {
     height: 80px;
     border-radius: 50%;
 }
+
+/* = = = = = = = = = = = = = = = = = = */
+/* FOOTER                              */
+/* = = = = = = = = = = = = = = = = = = */
+footer {
+    width: 100vw;
+    padding: 10px 130px;
+    background-color: #2FA4FF;
+    color: #17202a;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer nav ul li a {
+    text-decoration: underline;
+}
