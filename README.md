@@ -2,7 +2,7 @@
 Using localstorage to login and fetching from the random users API. 
 
 ### Login Credentials
-Username: johndoe@gmail.com
+Username: johndoe@gmail.com <br>
 Password: password
 
 ### Languages
