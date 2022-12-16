@@ -128,7 +128,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    padding-inline: 130px;
+    padding-inline: 55px;
     background-color: #2FA4FF;
 }
 
@@ -166,7 +166,7 @@ nav, nav ul {
 }
 
 .box {
-    width: 400px;
+    width: 450px;
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -249,10 +249,10 @@ nav, nav ul {
     gap: 15px;
 }
 
-.posting button {
+.posting .fa-paper-plane {
     position: absolute;
-    top: 30%;
-    right: 38%;
+    top: 31%;
+    right: 37%;
     background-color: #FFF;
 }
 
@@ -261,7 +261,7 @@ nav, nav ul {
     gap: 15px;
     position: absolute;
     top: 31%;
-    right: 57.5%;
+    right: 60%;
 }
 
 .feed {
@@ -350,7 +350,7 @@ nav, nav ul {
 /* = = = = = = = = = = = = = = = = = = */
 footer {
     width: 100vw;
-    padding: 10px 130px;
+    padding: 10px 55px;
     background-color: #2FA4FF;
     color: #17202a;
 }
