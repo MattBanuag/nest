@@ -154,6 +154,7 @@ textarea {
   padding: 20px 15px;
   border-radius: 5px;
   resize: none;
+  font-weight: 700;
 }
 
 span {
@@ -161,6 +162,7 @@ span {
 }
 
 .blue {
+  text-decoration: underline;
   color: #3B82F6;
 }
 
@@ -170,4 +172,10 @@ span {
 
 .bold {
   font-weight: 700;
+}
+
+.fa-user {
+  padding-bottom: 10px;
+  border-radius: 3px;
+  border-bottom: 5px solid #F15412;
 }
