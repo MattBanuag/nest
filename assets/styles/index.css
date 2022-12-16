@@ -234,6 +234,7 @@ nav, nav ul {
 
 .feed {
     padding: 15px;
+    border-radius: 5px;
     background-color: #FFF;
 }
 
