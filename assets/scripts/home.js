@@ -15,11 +15,16 @@ const feedStream = select('.feed-stream');
 const postBtn = select('.fa-paper-plane');
 const postFile = select('#image-input');
 const textarea = select('textarea');
+const today = new Date();
 const url = 'https://randomuser.me/api/?nat=CA&results=10';
 const options = {
     method: 'GET',
     mode: 'cors'
 };
+let hour = today.getHours().toString();
+let minutes = today.getMinutes().toString().padStart('2', 0)
+let ampm = hour >= 12 ? 'p.m' : 'a.m';
+let day = today.toDateString(); 
 window.URL = window.URL || window.webkitURL;
 
 // FUNCTIONS
@@ -31,10 +36,14 @@ onEvent('click', postBtn, () => {
     try {
         let imageURL = URL.createObjectURL(postFile.files[0]);
         content.innerHTML = `
-        <figure class="user-info">
-            <img src="assets/media/Profile.jpg" alt="">
-            <h5>Matthew Banuag</h5>
-        </figure>
+        <div class="user-info">
+            <figure>
+                <img src="assets/media/Profile.jpg" alt="">
+                <h5>Matthew Banuag</h5>
+            </figure>
+
+            <small class="bold gray">${day.slice(0, 15)}, ${hour}:${minutes} ${ampm}</small>
+        </div>
 
         <p>
             ${message}
@@ -55,10 +64,14 @@ onEvent('click', postBtn, () => {
         feedStream.prepend(content);
     } catch {
         content.innerHTML = `
-        <figure class="user-info">
-            <img src="assets/media/Profile.jpg" alt="">
-            <h5>Matthew Banuag</h5>
-        </figure>
+        <div class="user-info">
+            <figure>
+                <img src="assets/media/Profile.jpg" alt="">
+                <h5>Matthew Banuag</h5>
+            </figure>
+
+            <small class="bold gray">${day.slice(0, 15)}, ${hour}:${minutes} ${ampm}</small>
+        </div>
 
         <p>
             ${message}
