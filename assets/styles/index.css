@@ -261,5 +261,26 @@ nav, nav ul {
 
 /* NETWORK */
 .people-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     background-color: #FFF;
+}
+
+.other-users-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #F2F4F9;
+    border-left: none;
+    border-right: none;
+}
+
+.other-users-box figure img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
