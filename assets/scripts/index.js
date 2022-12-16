@@ -14,7 +14,8 @@ function setCred() {
     let setUsername = 'johndoe@gmail.com';
     let setPassword = 'password';
 
-    if(localStorage.length < 1) {
+    if(localStorage.length < 1 || !localStorage.getItem('username') ||
+       !localStorage.getItem('password')) {
         localStorage.setItem('password', setPassword);
         localStorage.setItem('username', setUsername);
     }
